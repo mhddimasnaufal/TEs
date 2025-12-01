@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kenangan - Placeholder Images</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0b1e 0%, #2d1b69 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #ff7eb9;
+            margin-bottom: 2rem;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .image-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        
+        .gallery1 { background: linear-gradient(45deg, #ff7eb9, #9d4edd); }
+        .gallery2 { background: linear-gradient(45deg, #9d4edd, #4361ee); }
+        .gallery3 { background: linear-gradient(45deg, #4361ee, #4cc9f0); }
+        .gallery4 { background: linear-gradient(45deg, #ffd166, #ff9e6d); }
+        .gallery5 { background: linear-gradient(45deg, #ff6b6b, #ff9e6d); }
+        .gallery6 { background: linear-gradient(45deg, #06d6a0, #4cc9f0); }
+        
+        .image-info {
+            padding: 1rem;
+        }
+        
+        .image-info h3 {
+            margin: 0 0 0.5rem 0;
+            color: #ffd166;
+        }
+        
+        .image-info p {
+            margin: 0;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+        
+        .birthday-info {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255, 126, 185, 0.1);
+            border-radius: 15px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Galeri Kenangan Naila</h1>
+    <p>Placeholder images untuk website ulang tahun Naila Nazla Pohan</p>
+    
+    <div class="image-grid">
+        <div class="image-card">
+            <div class="image-placeholder gallery1">❤️</div>
+            <div class="image-info">
+                <h3>Momen Spesial</h3>
+                <p>Gambar 1 - Kenangan indah bersama</p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="image-placeholder gallery2">😊</div>
+            <div class="image-info">
+                <h3>Kebersamaan</h3>
+                <p>Gambar 2 - Senyuman yang menyimpan cerita</p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="image-placeholder gallery3">🌅</div>
+            <div class="image-info">
+                <h3>Petualangan</h3>
+                <p>Gambar 3 - Melangkah bersama menuju impian</p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="image-placeholder gallery4">😂</div>
+            <div class="image-info">
+                <h3>Canda Tawa</h3>
+                <p>Gambar 4 - Momen penuh kebahagiaan</p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="image-placeholder gallery5">💖</div>
+            <div class="image-info">
+                <h3>Romantis</h3>
+                <p>Gambar 5 - Kasih sayang yang tak ternilai</p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="image-placeholder gallery6">✨</div>
+            <div class="image-info">
+                <h3>Impian</h3>
+                <p>Gambar 6 - Bersama meraih masa depan</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="birthday-info">
+        <h2>🎂 Informasi Ulang Tahun</h2>
+        <p><strong>Nama:</strong> Naila Nazla Pohan</p>
+        <p><strong>Usia:</strong> 19 tahun (2025)</p>
+        <p><strong>TTL:</strong> Medan, 02 Desember 2006</p>
+        <p><strong>Zodiak:</strong> Sagitarius</p>
+    </div>
+</body>
+</html>

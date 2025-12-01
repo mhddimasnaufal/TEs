@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Halaman Tidak Ditemukan | Birthday API</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0b1e 0%, #2d1b69 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 600px;
+        }
+        
+        .error-code {
+            font-family: 'Playfair Display', serif;
+            font-size: 8rem;
+            background: linear-gradient(45deg, #ff7eb9, #9d4edd, #ffd166);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffd166;
+        }
+        
+        p {
+            color: #ccc;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .info-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 126, 185, 0.2);
+        }
+        
+        .info-box h3 {
+            color: #9d4edd;
+            margin-bottom: 1rem;
+        }
+        
+        .birthday-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        
+        .detail {
+            text-align: center;
+        }
+        
+        .detail-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffd166;
+            display: block;
+        }
+        
+        .detail-label {
+            color: #9d4edd;
+            font-size: 0.9rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(45deg, #ff7eb9, #9d4edd);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .heart {
+            font-size: 3rem;
+            margin: 1rem 0;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .birthday-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">💝</div>
+        <div class="error-code">404</div>
+        <h1>Halaman Tidak Ditemukan</h1>
+        <p>Endpoint yang Anda cari tidak tersedia di API Birthday Website.</p>
+        
+        <div class="info-box">
+            <h3>🎂 Informasi Ulang Tahun</h3>
+            <div class="birthday-info">
+                <div class="detail">
+                    <span class="detail-value">Naila Nazla Pohan</span>
+                    <span class="detail-label">Nama</span>
+                </div>
+                <div class="detail">
+                    <span class="detail-value">19 Tahun</span>
+                    <span class="detail-label">Usia</span>
+                </div>
+                <div class="detail">
+                    <span class="detail-value">Medan</span>
+                    <span class="detail-label">Tempat Lahir</span>
+                </div>
+            </div>
+        </div>
+        
+        <p>API ini dibuat khusus untuk website hadiah ulang tahun Naila Nazla Pohan.</p>
+        
+        <a href="/" class="btn">Kembali ke Dokumentasi API</a>
+        
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="color: #9d4edd; font-size: 0.9rem;">
+                © 2025 Birthday Gift Website for Naila Nazla Pohan<br>
+                TTL: Medan, 02 Desember 2006
+            </p>
+        </div>
+    </div>
+</body>
+</html>
