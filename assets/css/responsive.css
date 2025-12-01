@@ -1,0 +1,544 @@
+/* ============================================
+   RESPONSIVE DESIGN - Happy Birthday Naila
+   ============================================ */
+
+/* Large Desktops (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .section-title {
+        font-size: 3.5rem;
+    }
+    
+    .envelope-3d {
+        transform: scale(1.2);
+    }
+}
+
+/* Medium Devices (Tablets, 768px - 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 0 15px;
+    }
+    
+    .section-title {
+        font-size: 2.8rem;
+    }
+    
+    .nav-menu {
+        gap: 15px;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    
+    .envelope-3d {
+        transform: scale(1);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .heartbeat-container {
+        padding: 20px;
+    }
+    
+    .what-i-love-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .quiz-container {
+        padding: 20px;
+    }
+}
+
+/* Small Devices (Phones, 576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        padding: 0 10px;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Navigation */
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .nav-brand span {
+        display: none;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 20px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .nav-menu.show {
+        left: 0;
+    }
+    
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 15px;
+        justify-content: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+    
+    /* Sections */
+    section {
+        padding: 40px 0;
+    }
+    
+    .envelope-3d {
+        transform: scale(0.8);
+    }
+    
+    .galaxy-3d-container {
+        height: 300px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .video-player-container {
+        padding: 15px;
+    }
+    
+    .voice-message-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .heartbeat-container {
+        padding: 15px;
+    }
+    
+    .what-i-love-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .zodiac-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .zodiac-info {
+        margin-top: 20px;
+    }
+    
+    .quiz-container {
+        padding: 15px;
+    }
+    
+    .quiz-question {
+        font-size: 1.2rem;
+    }
+    
+    .quiz-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .quiz-option {
+        width: 100%;
+    }
+    
+    /* Audio Player */
+    .audio-player {
+        bottom: 10px;
+        right: 10px;
+        width: calc(100% - 20px);
+    }
+    
+    .player-controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .playlist-info {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    /* Floating Elements */
+    .floating-hearts,
+    .floating-balloons {
+        display: none;
+    }
+    
+    /* Modal */
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+        padding: 20px;
+    }
+}
+
+/* Extra Small Devices (Phones, under 576px) */
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    html {
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    /* Loading Screen */
+    .loader {
+        padding: 20px;
+    }
+    
+    .loader p {
+        font-size: 1rem;
+    }
+    
+    /* Navigation */
+    .nav-container {
+        padding: 10px 15px;
+        height: 60px;
+    }
+    
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+    
+    .nav-brand i {
+        font-size: 1.5rem;
+    }
+    
+    .nav-toggle {
+        font-size: 1.5rem;
+    }
+    
+    /* Sections */
+    section {
+        padding: 30px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 30px;
+    }
+    
+    /* Envelope 3D */
+    .envelope-container {
+        height: 400px;
+    }
+    
+    .envelope-3d {
+        transform: scale(0.7);
+    }
+    
+    .envelope-content {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Galaxy 3D */
+    .galaxy-3d-container {
+        height: 250px;
+    }
+    
+    /* Video Player */
+    .video-player-container {
+        padding: 10px;
+    }
+    
+    .video-controls {
+        padding: 10px;
+    }
+    
+    .control-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    /* Voice Message */
+    .voice-message-item {
+        padding: 15px;
+    }
+    
+    .voice-controls button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Heartbeat */
+    .heartbeat-container {
+        padding: 15px;
+    }
+    
+    .heartbeat-canvas {
+        height: 150px;
+    }
+    
+    /* What I Love */
+    .love-item {
+        padding: 15px;
+    }
+    
+    .love-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    /* Zodiac */
+    .zodiac-sign {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .zodiac-traits {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .trait-item {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+    
+    /* Quiz */
+    .quiz-container {
+        padding: 15px;
+    }
+    
+    .quiz-question {
+        font-size: 1.1rem;
+    }
+    
+    .quiz-option {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    .quiz-score {
+        font-size: 1rem;
+    }
+    
+    /* Audio Player */
+    .audio-player {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.95);
+    }
+    
+    .player-controls {
+        padding: 10px;
+    }
+    
+    .player-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .volume-control {
+        display: none;
+    }
+    
+    /* Scroll to Top */
+    .scroll-top-btn {
+        width: 45px;
+        height: 45px;
+        bottom: 70px;
+        right: 15px;
+        font-size: 1.2rem;
+    }
+    
+    /* Modal */
+    .modal-content {
+        width: 95%;
+        margin: 20% auto;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .modal-body {
+        padding: 15px;
+    }
+    
+    /* Confetti */
+    .confetti {
+        width: 6px !important;
+        height: 6px !important;
+    }
+}
+
+/* Portrait Mode */
+@media (orientation: portrait) {
+    .envelope-3d {
+        transform: rotateY(10deg) scale(0.8);
+    }
+    
+    .galaxy-3d-container {
+        height: 300px;
+    }
+}
+
+/* Landscape Mode */
+@media (orientation: landscape) and (max-height: 500px) {
+    .nav-menu {
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+    
+    section {
+        padding: 20px 0;
+        min-height: auto;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .envelope-container {
+        height: 300px;
+    }
+    
+    .galaxy-3d-container {
+        height: 250px;
+    }
+    
+    .audio-player {
+        bottom: 5px;
+        right: 5px;
+        width: auto;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --text-color: #ffffff;
+        --card-bg: #1e1e1e;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav-menu {
+        background: rgba(30, 30, 30, 0.95);
+    }
+    
+    .nav-link {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .modal-content {
+        background: #2d2d2d;
+        color: white;
+    }
+    
+    .audio-player {
+        background: rgba(30, 30, 30, 0.95);
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .nav-link {
+        border: 2px solid currentColor;
+    }
+    
+    .love-item,
+    .voice-message-item,
+    .quiz-option {
+        border: 2px solid currentColor;
+    }
+    
+    button {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .floating-hearts,
+    .floating-balloons,
+    .confetti {
+        display: none !important;
+    }
+    
+    .heartbeat-canvas {
+        animation: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .main-nav,
+    .audio-player,
+    .scroll-top-btn,
+    .floating-hearts,
+    .floating-balloons,
+    #confetti-container {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .container {
+        max-width: 100% !important;
+    }
+    
+    section {
+        page-break-inside: avoid;
+        min-height: auto !important;
+    }
+}
